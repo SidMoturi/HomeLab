@@ -4,7 +4,7 @@
 
 ## Overview
 This repository showcases my personal home lab project, a cloud-based cybersecurity learning environment hosted on AWS EC2 instances, managed locally with "SidSPC." It demonstrates my skills in network security, virtualization, and system administration. Key components include:
-- Hardware: Local control machine "SidSPC" (AMD Ryzen 5 9600X 6-Core, 64.0 GB RAM, 932 GB storage), with a Raspberry Pi 4 as a lightweight node.
+- Hardware: Local control machine "SidSPC" (AMD Ryzen 5 9600X 6-Core, 64.0 GB RAM, 932 GB storage).
 - Software: Configured and managed AWS EC2 instances (Windows Server 2019, Ubuntu Server 22.04, and Amazon Linux 2023), implemented OpenVPN for secure access, and deployed Snort for intrusion detection.
 - Networking: Designed VLAN segmentation via AWS VPC and enforced firewall rules using Security Groups.
 
