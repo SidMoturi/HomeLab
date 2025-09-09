@@ -1,19 +1,26 @@
 # My Home Lab Project
 
+![Network Diagram](./diagrams/network-diagram.png)
+
 ## Overview
-This repo documents my home lab setup, including hardware (e.g., Raspberry Pi, old PCs), software (e.g., Proxmox, Docker), and networking (e.g., VLANs, firewalls).
+This repository showcases my personal home lab project, a cloud-based cybersecurity learning environment hosted on AWS EC2 instances, managed locally with "SidSPC." It demonstrates my skills in network security, virtualization, and system administration. Key components include:
+- Hardware: Local control machine "SidSPC" (AMD Ryzen 5 9600X 6-Core, 64.0 GB RAM, 932 GB storage), with a Raspberry Pi 4 as a lightweight node.
+- Software: Configured and managed AWS EC2 instances (Windows Server 2019, Ubuntu Server 22.04, and Amazon Linux 2023), implemented OpenVPN for secure access, and deployed Snort for intrusion detection.
+- Networking: Designed VLAN segmentation via AWS VPC and enforced firewall rules using Security Groups.
 
 ## Table of Contents
-- [Hardware Setup](./docs/setup.md)
-- [Networking](./docs/networking.md)
-- [Scripts and Automation](./scripts/)
-- [Configs](./configs/)
-- [Troubleshooting](./docs/troubleshooting.md)
+- [Hardware and Software Setup](./docs/setup.md)
+- [Networking Configuration](./docs/networking.md)
+- [Troubleshooting Guide](./docs/troubleshooting.md)
+- [Automation Scripts](./scripts/)
+- [Configuration Files](./configs/)
+- [Diagrams](./diagrams/)
 
-## Quick Start
-1. Clone this repo (or download files).
-2. Follow [setup.md](./docs/setup.md) for installation.
-3. Run example script in [scripts](./scripts/).
+## Skills Demonstrated
+- AWS EC2 instance management and virtualization across multiple OS platforms (Windows, Ubuntu, Amazon Linux).
+- Network security implementation with OpenVPN and Snort.
+- System administration on diverse hardware ("SidSPC" and Raspberry Pi 4).
+- VPC and Security Group configuration for secure network segmentation.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
