@@ -12,7 +12,6 @@ This repository showcases my personal home lab project, a cloud-based cybersecur
 - [Hardware and Software Setup](./docs/setup.md)
 - [Networking Configuration](./docs/networking.md)
 - [Troubleshooting Guide](./docs/troubleshooting.md)
-- [Automation Scripts](./scripts/)
 - [Configuration Files](./configs/)
 - [Diagrams](./diagrams/)
 
@@ -24,3 +23,6 @@ This repository showcases my personal home lab project, a cloud-based cybersecur
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute.
