@@ -1,0 +1,31 @@
+# VPC and Firewall Configurations
+
+## Overview
+Designed and implemented a secure AWS VPC as the foundation of my cloud-based cybersecurity lab, with comprehensive firewall settings to protect t2.micro instances running Windows Server 2019, Ubuntu Server 22.04, and Amazon Linux 2023.
+
+## VPC Setup
+- **VPC CIDR**: 10.0.0.0/16, serving as the core network.
+- **Subnets**:
+  - Subnet 1: 10.0.1.0/24 (Windows Server 2019).
+  - Subnet 2: 10.0.2.0/24 (Ubuntu Server 22.04 with OpenVPN).
+  - Subnet 3: 10.0.3.0/24 (Amazon Linux 2023 with Snort).
+- **Internet Gateway**: Attached to the VPC for internet access, linked to the main route table.
+
+## Firewall Configuration
+- **Security Group Rules**:
+  - **Inbound Rules**:
+    - SSH: Port 22, Source: My local IP (e.g., 203.0.113.0/32).
+    - Telnet: Port 23, Source: My local IP (for testing).
+    - HTTP: Port 80, Source: 0.0.0.0/0.
+    - HTTPS: Port 443, Source: 0.0.0.0/0.
+    - OpenVPN: Port 1194, Source: My local IP.
+  - **Outbound Rules**:
+    - All traffic: 0.0.0.0/0, allowing instances to access the internet.
+- **Routing Tables**:
+  - Destination: 10.0.0.0/16, Target: Local.
+  - Destination: 0.0.0.0/0, Target: Internet Gateway.
+
+## Technical Achievements
+- Designed a VPC with segmented subnets and an Internet Gateway for connectivity.
+- Configured detailed Security Group rules for secure access and testing.
+- Set up routing to ensure internet access across the network.
